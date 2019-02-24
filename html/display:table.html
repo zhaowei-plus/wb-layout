@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display:Table实现左中右布局</title>
+    <style>
+        html, body {
+            paddding: 0;
+            margin: 0;
+
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+            display: table;
+        }
+
+        div {
+            height: 100%;
+            line-height: 500px;
+            text-align: center;
+            font-size: 32px;
+            color: #fff;
+
+        }
+
+        .left {
+            display: table-cell;
+            width: 300px;
+            background-color: green;
+        }
+
+        .center {
+            display: table-cell;
+            background-color: blue;
+            z-index: -1;
+        }
+
+        .right {
+            display: table-cell;
+            width: 300px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="left">
+    左边部分
+</div>
+<div class="center">
+    中间部分
+</div>
+<div class="right">
+    右边部分
+</div>
+</body>
+</html>
